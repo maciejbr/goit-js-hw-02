@@ -1,3 +1,5 @@
+"use strict";
+
 function checkForSpam(message) {
   const checkMessage = message.toLowerCase();
   if (checkMessage.includes("spam") || checkMessage.includes("sale")) {
