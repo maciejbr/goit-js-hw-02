@@ -1,4 +1,4 @@
-"use strict";
+/* "use strict";
 
 function getShippingCost(country) {
   let price = "";
@@ -20,6 +20,31 @@ function getShippingCost(country) {
     case `Jamaica`:
       price = "120";
       shippingMessage = `Shipping to ${country} will cost ${price} credits`;
+      break;
+    default:
+      shippingMessage = `Sorry, there is no delivery to your country`;
+  }
+  return `${shippingMessage}`;
+} */
+
+"use strict";
+
+function getShippingCost(country) {
+  let price = "";
+  let shippingMessage = `Shipping to ${country} will cost ${price} credits`;
+
+  switch (country) {
+    case `Australia`:
+      price = "170";
+      break;
+    case `China`:
+      price = "100";
+      break;
+    case `Chile`:
+      price = "250";
+      break;
+    case `Jamaica`:
+      price = "120";
       break;
     default:
       shippingMessage = `Sorry, there is no delivery to your country`;
